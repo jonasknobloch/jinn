@@ -11,8 +11,6 @@ func (d *decoder) MustDecode(s string) *Tree {
 }
 
 func TestDecoder_Decode(t *testing.T) {
-	t.Skipf("useless without proper tree comparison")
-
 	cases := []struct {
 		str  string
 		tree *Tree
@@ -29,12 +27,14 @@ func TestDecoder_Decode(t *testing.T) {
 		},
 	}
 
-	p := NewDecoder()
+	d := NewDecoder()
 
 	for _, c := range cases {
-		tr := p.MustDecode("(S (NP (NNP John)) (VP (V runs)) (. .))")
+		tr := d.MustDecode("(S (NP (NNP John)) (VP (V runs)) (. .))")
 
-		// TODO compare trees
+		if !c.tree.Equals(tr) {
+			t.Errorf("%v expected but got %v\n", c.tree, tr)
+		}
 
 		if tr.String() != c.tree.String() {
 			t.Errorf("%v expected but got %v\n", c.tree, tr)
