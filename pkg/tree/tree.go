@@ -141,6 +141,17 @@ func (t *Tree) EdgePositions() map[string][]string {
 	return eps
 }
 
+func (t *Tree) Sentence() string {
+	var sb strings.Builder
+
+	for _, l := range t.Leaves() {
+		sb.WriteString(" ")
+		sb.WriteString(l.Label)
+	}
+
+	return sb.String()[1:]
+}
+
 func (t *Tree) String() string {
 	var sb strings.Builder
 

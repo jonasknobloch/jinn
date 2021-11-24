@@ -189,6 +189,10 @@ func TestTree_EdgePositions(t *testing.T) {
 	// TODO implement
 }
 
+func TestTree_Sentence(t *testing.T) {
+	// TODO implement
+}
+
 func TestTree_String(t *testing.T) {
 	p := NewDecoder()
 
