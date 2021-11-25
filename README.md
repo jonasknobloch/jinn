@@ -6,7 +6,8 @@ Jinn is a collection of NLP related packages for the Go ecosystem. Jinn is not N
 
 ## Packages
 
-| Package      | Description               |
-|--------------|---------------------------|
-| `corenlp`    | Simple CoreNLP wrapper    |
-| `tree`       | Basic tree implementation |
+| Package      | Description                                    |
+|--------------|------------------------------------------------|
+| `corenlp`    | Simple CoreNLP wrapper                         |
+| `msrpc`      | Microsoft Research paraphrase corpus utilities |
+| `tree`       | Basic tree implementation                      |
