@@ -1,8 +1,8 @@
 ![Gopher](gopher.svg)
 
-# JINN
+# Jinn
 
-JINN is a collection of NLP related packages for the Go ecosystem. JINN is not NLTK. 
+Jinn is a collection of NLP related packages for the Go ecosystem. Jinn is not NLTK. 
 
 ## Packages
 
