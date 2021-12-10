@@ -3,7 +3,7 @@ package corenlp
 type Annotator string
 
 // TokenizerAnnotator tokenizes the text.
-const TokenizerAnnotator Annotator = "tokenizer"
+const TokenizerAnnotator Annotator = "tokenize"
 
 // CleanXmlAnnotator removes XML tokens from the document.
 const CleanXmlAnnotator Annotator = "cleanxml"
