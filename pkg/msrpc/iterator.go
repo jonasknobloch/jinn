@@ -43,15 +43,13 @@ func NewIterator(name string) (*Iterator, error) {
 func (i *Iterator) Next() bool {
 	if !i.scanner.Scan() {
 		i.error = i.scanner.Err()
+
 		return false
 	}
 
-	var err error
+	i.sample, i.error = NewSample(i.scanner.Text())
 
-	i.sample, err = NewSample(i.scanner.Text())
-
-	if err != nil {
-		i.error = err
+	if i.error != nil {
 		return false
 	}
 
