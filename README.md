@@ -6,14 +6,13 @@ Jinn is a collection of NLP related packages for the Go ecosystem. Jinn is not N
 
 ## Packages
 
-| Package   | Description                | Documentation                                                               |
-|-----------|----------------------------|-----------------------------------------------------------------------------|
-| `corenlp` | Simple CoreNLP[^1] wrapper | [pkg/corenlp](https://pkg.go.dev/github.com/jonasknobloch/jinn/pkg/corenlp) |
-| `msrpc`   | MSRPC[^2] sample iterator  | [pkg/msrpc](https://pkg.go.dev/github.com/jonasknobloch/jinn/pkg/msrpc)     |
-| `paws`    | PAWS[^3] sample iterator   | [pkg/paws](https://pkg.go.dev/github.com/jonasknobloch/jinn/pkg/paws)       |
-| `score`   | BLEU[^4] score             | [pkg/score](https://pkg.go.dev/github.com/jonasknobloch/jinn/pkg/score)     |
-| `tree`    | Basic tree implementation  | [pkg/tree](https://pkg.go.dev/github.com/jonasknobloch/jinn/pkg/tree)       |
-| `utility` | Utility functions          | [pkg/utility](https://pkg.go.dev/github.com/jonasknobloch/jinn/pkg/utility) |
+| Package      | Description                       | Documentation                                                                     |
+|--------------|-----------------------------------|-----------------------------------------------------------------------------------|
+| `corenlp`    | Simple CoreNLP[^1] wrapper        | [pkg/corenlp](https://pkg.go.dev/github.com/jonasknobloch/jinn/pkg/corenlp)       |
+| `data`       | Iterator for MSRPC[^2] & PAWS[^3] | [pkg/data](https://pkg.go.dev/github.com/jonasknobloch/jinn/pkg/data)             |
+| `score`      | BLEU[^4] score                    | [pkg/score](https://pkg.go.dev/github.com/jonasknobloch/jinn/pkg/score)           |
+| `tree`       | Basic tree implementation         | [pkg/tree](https://pkg.go.dev/github.com/jonasknobloch/jinn/pkg/tree)             |
+| `utility`    | Utility functions                 | [pkg/utility](https://pkg.go.dev/github.com/jonasknobloch/jinn/pkg/utility)       |
 
 [^1]: [The Stanford CoreNLP Natural Language Processing Toolkit](https://nlp.stanford.edu/pubs/StanfordCoreNlp2014.pdf)
 [^2]: [Automatically Constructing a Corpus of Sentential Paraphrases](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/I05-50025B15D.pdf)
